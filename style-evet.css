@@ -1,0 +1,30 @@
+body { 
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  background: #120c1c; /* Koyu arka plan rengi */
+}
+
+.love-text {
+  position: fixed;
+  top: 7vh;
+  left: 0;
+  width: 100vw;
+  text-align: center;
+  font-family: 'Marck Script', 'Comic Sans MS', cursive, sans-serif;
+  font-size: 2.2rem;
+  color: #ff477e; /* Rengi biraz daha canlı hale getirdim, ana sayfayla uyumlu */
+  text-shadow: 0 0 15px #ff477e; /* Parlama efekti ekledim */
+  font-weight: bold;
+  pointer-events: none;
+  z-index: 1;
+  user-select: none;
+}
+
+/* Küçük ekranlar için yazı boyutunu ayarla */
+@media (max-width: 600px) {
+  .love-text {
+    font-size: 1.5rem;
+    top: 5vh;
+  }
+}
