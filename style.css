@@ -302,3 +302,29 @@ strong {
 .envoltura-sobre.desactivar-sobre .sobre::before {
     pointer-events: none;
 }
+
+/* ===============================
+   Footer (Alt Bilgi) Stilleri
+   =============================== */
+.site-footer {
+  position: fixed; /* Sayfayı kaydırsan bile yerinde kalır */
+  bottom: 0;       /* Ekranın en altına yapışır */
+  left: 0;
+  width: 100%;     /* Tüm ekran genişliğini kaplar */
+  padding: 15px 0; /* Üstten ve alttan boşluk verir */
+  background-color: rgba(255, 235, 242, 0.6); /* Temayla uyumlu, hafif şeffaf arka plan */
+  text-align: center; /* Yazıyı ortalar */
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  font-size: 14px;
+  color: #8c5d6e;  /* Temayla uyumlu, okunaklı bir renk */
+  user-select: none; /* Kullanıcının yazıyı seçmesini engeller, daha temiz bir görünüm sağlar */
+  z-index: 1; /* Diğer elementlerin arkasında kalmasını sağlar */
+}
+
+/* Mobil cihazlarda yazı boyutunu biraz küçültelim */
+@media (max-width: 600px) {
+  .site-footer {
+    font-size: 12px;
+    padding: 10px 0;
+  }
+}
